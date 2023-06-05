@@ -47,5 +47,8 @@ dd:nth-child(2) {
   float: left;
 }
 .term-list:last-child dd:last-child {
-  text-align: right;
+  display: flow-root;
+}
+.term-list:last-child dd:last-child img {
+  float: right;
 }
