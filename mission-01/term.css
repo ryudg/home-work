@@ -11,12 +11,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-h1 {
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 150%;
-  margin-bottom: 16px;
-}
 .term {
   width: 250px;
   background: linear-gradient(180deg, #cccccc 0%, #eeeeee 100%);
@@ -26,39 +20,34 @@ h1 {
   font-size: 14px;
   line-height: 150%;
 }
-.term-list-items:first-child {
-  margin-bottom: 12px;
+.term-list {
+  display: flow-root;
 }
-.term-list-items {
-  font-size: 14px;
-  line-height: 150%;
+h1 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 16px;
 }
 dt {
   font-weight: 700;
   color: #296897;
   margin-bottom: 4px;
 }
-.term-list-text {
-  float: right;
+dt,
+dd:nth-child(2) {
   width: 142px;
 }
-.term-list:last-child .term-list-text {
-  float: left;
+.term-list:nth-child(2) {
+  margin-bottom: 12px;
 }
-.term-list-img {
-  float: left;
-}
-.term-list:last-child .term-list-img {
+.term-list:nth-child(2) dt,
+.term-list:nth-child(2) dd:nth-child(2) {
   float: right;
 }
-.term-list-img dt {
-  display: none;
+.term-list:last-child dt,
+.term-list:last-child dd:nth-child(2) {
+  float: left;
 }
-.term-list::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.term-list:last-child {
-  margin-top: 12px;
+.term-list:last-child dd:last-child {
+  text-align: right;
 }
