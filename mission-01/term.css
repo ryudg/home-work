@@ -24,6 +24,7 @@ h1 {
   border-radius: 5px;
   padding: 16px;
   font-size: 14px;
+  line-height: 150%;
 }
 .term-list-items:first-child {
   margin-bottom: 12px;
@@ -35,6 +36,7 @@ h1 {
 dt {
   font-weight: 700;
   color: #296897;
+  margin-bottom: 4px;
 }
 .term-list-text {
   float: right;
