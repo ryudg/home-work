@@ -18,9 +18,6 @@ body {
   font-size: 14px;
   line-height: 150%;
 }
-.term-list {
-  display: flow-root;
-}
 h1 {
   font-size: 15px;
   font-weight: 700;
@@ -31,9 +28,15 @@ dt {
   color: #296897;
   margin-bottom: 4px;
 }
-dt,
-dd:nth-child(2) {
+.term-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.term-list dt,
+.term-list dd:nth-child(2) {
   width: 142px;
+  outline: 1px solid red;
 }
 .term-list:nth-child(2) {
   margin-bottom: 12px;
@@ -47,8 +50,5 @@ dd:nth-child(2) {
   float: left;
 }
 .term-list:last-child dd:last-child {
-  display: flow-root;
-}
-.term-list:last-child dd:last-child img {
-  float: right;
+  text-align: right;
 }
