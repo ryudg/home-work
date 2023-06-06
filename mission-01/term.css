@@ -36,7 +36,6 @@ dt {
 .term-list dt,
 .term-list dd:nth-child(2) {
   width: 142px;
-  outline: 1px solid red;
 }
 .term-list:nth-child(2) {
   margin-bottom: 12px;
