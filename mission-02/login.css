@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+.form__input::placeholder {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+.login__container {
+  width: 244px;
+  padding: 12px;
+  background: linear-gradient(90deg, #ed552f 0%, #e8852e 100%);
+  box-shadow: 5px 5px 0px #aaaaaa;
+  border-radius: 5px;
+}
+.login__title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffff00;
+  margin-bottom: 8px;
+}
+.login__wrapper {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 8px 8px 0 8px;
+}
+.form__group {
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+fieldset {
+  border: none;
+}
+legend {
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.form__label {
+  display: inline-block;
+  width: 56px;
+  font-size: 14px;
+}
+.form__input {
+  width: 90px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 8px;
+  line-height: 150%;
+  font-size: 14px;
+  font-weight: 400;
+}
+.form__contents:nth-child(2) {
+  margin-bottom: 4px;
+}
+.form__submit {
+  background-color: #ed552f;
+  color: #fff;
+  font-size: 13px;
+  line-height: 150%;
+  border: 0;
+  border-radius: 5px;
+  padding: 16.5px 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.login__link {
+  padding: 4px 0px;
+  list-style: none;
+}
+.login__link::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.login__link li:first-child {
+  float: left;
+}
+.login__link li:last-child {
+  float: right;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #181818;
+  font-size: 13px;
+  line-height: 150%;
+  background-image: url(./images/list.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding: 4px 0px 4px 17px;
+}
