@@ -42,9 +42,9 @@ position 실습을 위한 과제
 </div>
 ```
 
-`<div class="login__container">`는 전체적인 레이아웃을 담는 container이며, 자식으로 타이틀인 `h1`과 로그인 `form`과 링크들이 담겨있는 박스를 가지고 있다.
+`<div class="login__container">`는 전체적인 레이아웃을 담는 container이며, 자식으로 타이틀인 `h1`과 로그인 `form`과 링크들이 담겨있는 `<div class="login__wrapper">`를 가지고 있다.
 
-`<div class="form__group">`는 `form` 요소의 전체적인 디자인을 담당하고, <br>
+`<div class="form__group">`는 `form` 요소들을 모두 포함하는 박스이며 버튼의 `position` 기준을 담당한다. <br>
 자식인 `form` 안에는 `fildset`이 `legend`, Id를 담당하는 `input`과 Pwd를 담당하는 `input`이 담긴 `div` 그리고 `submit`을 담당하는 `button`을 가지고 있다.
 
 `<div class="form__group">`의 형제로 `<ul class="login__link">`가 존재하는데, 각각 회원가입과 아이디/비밀번호 찾기를 담당하는 `li` 요소안에 `a` 요소로 포함되어 있다.
