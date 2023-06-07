@@ -10,12 +10,24 @@ body,
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
+.login__title,
+.form__input,
+.form__submit,
+a {
+  line-height: 150%;
+}
+.login__container,
+.login__wrapper,
+.form__input,
+.form__submit {
+  border-radius: 5px;
+}
+
 .login__container {
   width: 244px;
   padding: 12px;
   background: linear-gradient(90deg, #ed552f 0%, #e8852e 100%);
   box-shadow: 5px 5px 0px #aaaaaa;
-  border-radius: 5px;
 }
 .login__title {
   font-size: 15px;
@@ -25,7 +37,6 @@ body,
 }
 .login__wrapper {
   background-color: #fff;
-  border-radius: 5px;
   padding: 8px 8px 0 8px;
 }
 .form__group {
@@ -53,9 +64,7 @@ legend {
 .form__input {
   width: 90px;
   border: 1px solid #ccc;
-  border-radius: 5px;
   padding-left: 8px;
-  line-height: 150%;
   font-size: 14px;
   font-weight: 400;
 }
@@ -66,9 +75,7 @@ legend {
   background-color: #ed552f;
   color: #fff;
   font-size: 13px;
-  line-height: 150%;
   border: 0;
-  border-radius: 5px;
   padding: 16.5px 8px;
   position: absolute;
   top: 0;
@@ -95,7 +102,6 @@ a {
   text-decoration: none;
   color: #181818;
   font-size: 13px;
-  line-height: 150%;
   background-image: url(./images/list.png);
   background-repeat: no-repeat;
   background-position: 0 50%;
