@@ -103,15 +103,12 @@ position 실습을 위한 과제
   content: "";
   display: block;
   clear: both;
-  ...;
 }
 .login__link li:first-child {
   float: left;
-  ...;
 }
 .login__link li:last-child {
   float: right;
-  ...;
 }
 ```
 
@@ -125,6 +122,7 @@ position 실습을 위한 과제
 ```css
 .form__label {
   display: inline-block;
+  width: 56px;
   ...;
 }
 ```
