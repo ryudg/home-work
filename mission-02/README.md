@@ -4,13 +4,9 @@
 
 - [Info](#info)
 - [Image](#image)
-- [HTML](#html)
-  - [Markup 구조](#markup-구조)
-  - [Input Validation](#input-validation)
-- [CSS](#css)
-  - [Position](#로그인-버튼을-position을-활용하여-구현하기)
-  - [Float](#회원가입과-아이디비밀번호-찾기-링크를-float을-활용하여-구현하기)
-  - [Etc](#etc-style)
+- [Desc](#desc)
+  - [HTML](#html)
+  - [CSS](#css)
 
 ## Info
 
@@ -22,7 +18,9 @@ position 실습을 위한 과제
 
 ![gif](./images/mission-02.gif)
 
-## HTML
+## Desc
+
+### HTML
 
 > **마크업 순서**
 >
@@ -32,7 +30,7 @@ position 실습을 위한 과제
 > 4. 로그인 버튼
 > 5. 회원가입 및 아이디/비밀번호 찾기 링크
 
-### Markup 구조
+#### Markup 구조
 
 ```html
 <!-- 전체 컨테이너 -->
@@ -70,7 +68,7 @@ position 실습을 위한 과제
 
 <br>
 
-### Input validation
+#### Input validation
 
 ![validation](./images/valid.jpg)
 
@@ -87,14 +85,14 @@ position 실습을 위한 과제
   - minlength="8"
     - 입력값이 8자리 이상
 
-## CSS
+### CSS
 
 > **CSS 조건**
 >
 > 1. 일부 요소의 배치를 position 속성을 활용하여 구현
 > 2. 회원가입, 아이디/비밀번호 찾기 영역은 float을 활용하여 구현
 
-### 로그인 버튼을 position을 활용하여 구현하기.
+#### 로그인 버튼을 position을 활용하여 구현하기.
 
 `<div class="form__group">`에 `position: relative;` 속성을줌으로써 `<button class="form__submit" type="submit">`가 `<div class="form__group">`를 기준으로 위치를 잡도록 하였다.
 
@@ -111,7 +109,7 @@ position 실습을 위한 과제
 }
 ```
 
-### 회원가입과 아이디/비밀번호 찾기 링크를 float을 활용하여 구현하기.
+#### 회원가입과 아이디/비밀번호 찾기 링크를 float을 활용하여 구현하기.
 
 첫번째 요소인 `.login__link li:first-child`는 `float: left;`를 활용하여 좌측으로, <br>
 두번째 요소인 `.login__link li:last-child`는 `float: right;`를 활용하여 우측으로 배치하고 <br>
@@ -131,7 +129,7 @@ position 실습을 위한 과제
 }
 ```
 
-### Etc style
+#### Etc style
 
 **`label` 크기 조정과 정렬하기.**
 
