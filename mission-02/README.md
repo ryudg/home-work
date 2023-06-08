@@ -8,7 +8,7 @@ position 실습을 위한 과제
 
 ## Image
 
-![gif](./images/Mission-02.gif)
+![gif](./images/mission-02.gif)
 
 ## Markup
 
