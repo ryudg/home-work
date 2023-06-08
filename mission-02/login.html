@@ -21,11 +21,13 @@
             <legend>아이디 비밀번호 입력 창</legend>
             <div class="form__contents">
               <label class="form__label" for="form__id">아이디</label>
-              <input class="form__input" type="text" name="form__id" id="form__id" placeholder="euid@euid.dev" />
+              <input class="form__input" type="email" name="form__id" id="form__id" placeholder="euid@euid.dev"
+                autocomplete="off" required />
             </div>
             <div class="form__contents">
               <label class="form__label" for="form__pwd">비밀번호</label>
-              <input class="form__input" type="password" name="form__pwd" id="form__pwd" placeholder="8자리 이상" />
+              <input class="form__input" type="password" name="form__pwd" id="form__pwd" placeholder="8자리 이상" required
+                minlength="8" />
             </div>
             <button class="form__submit" type="submit">로그인</button>
           </fieldset>
