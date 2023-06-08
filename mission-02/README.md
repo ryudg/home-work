@@ -49,6 +49,18 @@ position 실습을 위한 과제
 
 `<div class="form__group">`의 형제로 `<ul class="login__link">`가 존재하는데, 각각 회원가입과 아이디/비밀번호 찾기를 담당하는 `li` 요소안에 `a` 요소로 포함되어 있다.
 
+<br>
+
+**Input validation**
+
+- Id
+  - type="email"
+  - required
+- Password
+  - type="password"
+  - required
+  - minlength="8"
+
 ## CSS
 
 > **CSS 조건**
@@ -56,7 +68,7 @@ position 실습을 위한 과제
 > 1. 일부 요소의 배치를 position 속성을 활용하여 구현
 > 2. 회원가입, 아이디/비밀번호 찾기 영역은 float을 활용하여 구현
 
-- 로그인 버튼을 position을 활용하여 구현하기.
+### 로그인 버튼을 position을 활용하여 구현하기.
 
 `<div class="form__group">`에 `position: relative;` 속성을줌으로써 `<button class="form__submit" type="submit">`가 `<div class="form__group">`를 기준으로 위치를 잡도록 하였다.
 
@@ -71,7 +83,7 @@ position 실습을 위한 과제
 }
 ```
 
-- 회원가입과 아이디/비밀번호 찾기 링크를 float을 활용하여 구현하기.
+### 회원가입과 아이디/비밀번호 찾기 링크를 float을 활용하여 구현하기.
 
 첫번째 요소인 `.login__link li:first-child`는 `float: left;`를 활용하여 좌측으로, <br>
 두번째 요소인 `.login__link li:last-child`는 `float: right;`를 활용하여 우측으로 배치하고 <br>
@@ -91,9 +103,8 @@ position 실습을 위한 과제
 }
 ```
 
-- `label` 크기 조정과 정렬하기.
+**`label` 크기 조정과 정렬하기.**
 
-`.form__label`에 크기주기 위해서는 `display`를 `block` 값으로 지정해야 하지만, 값이 `block`일 때는 줄바꿈이 된다. <br>
 따라서 `inline` 처럼 줄바꿈이 없고 `block`처럼 크기와 여백을 줄 수 있는 `inlin-block`로 지정해 주었다.
 
 ```css
