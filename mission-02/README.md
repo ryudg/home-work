@@ -53,13 +53,20 @@ position 실습을 위한 과제
 
 **Input validation**
 
+![validation](./images/valid.jpg)
+
 - Id
   - type="email"
+    - 입력 형식이 이메일 형식이 부합하는지 확인
   - required
+    - 필수 입력 사항
 - Password
   - type="password"
+    - 입력값이 화면에 보여지지 않도록 하기
   - required
+    - 필수 입력 사항
   - minlength="8"
+    - 입력값이 8자리 이상
 
 ## CSS
 
@@ -103,12 +110,37 @@ position 실습을 위한 과제
 }
 ```
 
+### Etc style
+
 **`label` 크기 조정과 정렬하기.**
 
+`.form__label`에 크기주기 위해서는 `display`를 `block` 값으로 지정해야 하지만, 값이 `block`일 때는 줄바꿈이 된다. <br>
 따라서 `inline` 처럼 줄바꿈이 없고 `block`처럼 크기와 여백을 줄 수 있는 `inlin-block`로 지정해 주었다.
 
 ```css
 .form__label {
   display: inline-block;
+}
+```
+
+**웹접근성을 고려한 숨김처리**
+
+시각적으로는 보이지 않게 처리하고, 스크린 리더는 페이지의 텍스트를 읽으며 사용자에게 아이디와 비밀번호를 입력하는 창이라고 전달.
+
+```html
+<fieldset>
+  <legend>아이디 비밀번호 입력 창</legend>
+</fieldset>
+```
+
+```css
+legend {
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 ```
