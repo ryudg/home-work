@@ -82,11 +82,13 @@ position 실습을 위한 과제
 ```css
 .form__group {
   position: relative;
+  ...;
 }
 .form__submit {
   position: absolute;
   top: 0;
   right: 0;
+  ...;
 }
 ```
 
@@ -101,12 +103,15 @@ position 실습을 위한 과제
   content: "";
   display: block;
   clear: both;
+  ...;
 }
 .login__link li:first-child {
   float: left;
+  ...;
 }
 .login__link li:last-child {
   float: right;
+  ...;
 }
 ```
 
@@ -114,12 +119,13 @@ position 실습을 위한 과제
 
 **`label` 크기 조정과 정렬하기.**
 
-`.form__label`에 크기주기 위해서는 `display`를 `block` 값으로 지정해야 하지만, 값이 `block`일 때는 줄바꿈이 된다. <br>
+인라인 요소인 `label`에 크기주기 위해서는 `display`를 `block` 값으로 지정해야 하지만, 값이 `block`일 때는 줄바꿈이 된다. <br>
 따라서 `inline` 처럼 줄바꿈이 없고 `block`처럼 크기와 여백을 줄 수 있는 `inlin-block`로 지정해 주었다.
 
 ```css
 .form__label {
   display: inline-block;
+  ...;
 }
 ```
 
@@ -146,6 +152,7 @@ html markup시 `inline` 요소들에 공백이나 줄바꿈이 있으면 화면�
 ```html
 <fieldset>
   <legend>아이디 비밀번호 입력 창</legend>
+  ...
 </fieldset>
 ```
 
