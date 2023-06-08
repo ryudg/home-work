@@ -1,5 +1,17 @@
 # Mission-02
 
+**Index**
+
+- [Info](#info)
+- [Image](#image)
+- [HTML](#html)
+  - [Markup 구조](#markup-구조)
+  - [Input Validation](#input-validation)
+- [CSS](#css)
+  - [Position](#로그인-버튼을-position을-활용하여-구현하기)
+  - [Float](#회원가입과-아이디비밀번호-찾기-링크를-float을-활용하여-구현하기)
+  - [Etc](#etc-style)
+
 ## Info
 
 position 실습을 위한 과제
@@ -10,7 +22,7 @@ position 실습을 위한 과제
 
 ![gif](./images/mission-02.gif)
 
-## Markup
+## HTML
 
 > **마크업 순서**
 >
@@ -20,10 +32,16 @@ position 실습을 위한 과제
 > 4. 로그인 버튼
 > 5. 회원가입 및 아이디/비밀번호 찾기 링크
 
+### Markup 구조
+
 ```html
+<!-- 전체 컨테이너 -->
 <div class="login__container">
+  <!-- 제목 -->
   <h1 class="login__title">Title...</h1>
+  <!-- 로그인 form 및 회원가입 link box -->
   <div class="login__wrapper">
+    <!-- 로그인 form box -->
     <div class="form__group">
       <form action="https://formspree.io/f/mnqykglp" method="POST">
         <fieldset>
@@ -34,6 +52,7 @@ position 실습을 위한 과제
         </fieldset>
       </form>
     </div>
+    <!-- 회원가입 link box -->
     <ul class="login__link">
       <li><a>Link...</a></li>
       <li><a>Link...</a></li>
@@ -51,7 +70,7 @@ position 실습을 위한 과제
 
 <br>
 
-**Input validation**
+### Input validation
 
 ![validation](./images/valid.jpg)
 
