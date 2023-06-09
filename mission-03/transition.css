@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+.related-site {
+  margin: 10px;
+  background: linear-gradient(180deg, #cccccc 0%, #eeeeee 100%);
+  padding: 12px;
+  display: inline-block;
+  border: 1px solid #a3a3a3;
+  border-radius: 5px;
+}
+h1,
+.related-site__list li a {
+  color: #181818;
+  line-height: 150%;
+}
+h1 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+h1 span {
+  color: #ed552f;
+}
+.related-site__list {
+  list-style: none;
+  border: 1px solid #a3a3a3;
+  border-radius: 5px;
+  background: #fff;
+  width: 166px;
+  height: 29px;
+  overflow: hidden;
+  padding-left: 24px;
+  transition: padding-top 0.3s 0.3s, height 0.3s;
+}
+.related-site__list:hover {
+  height: 169px;
+  padding-top: 12px;
+}
+.related-site__list li a {
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  padding: 4px;
+}
