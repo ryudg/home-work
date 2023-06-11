@@ -9,7 +9,7 @@ body {
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
-.related-site {
+.related-container {
   margin: 10px;
   background: linear-gradient(180deg, #cccccc 0%, #eeeeee 100%);
   padding: 12px;
@@ -17,16 +17,16 @@ body {
   border: 1px solid #a3a3a3;
   border-radius: 5px;
 }
-h1,
+.title,
 .related-site__list li a {
   color: #181818;
   line-height: 150%;
 }
-h1 {
+.title {
   font-size: 15px;
   margin-bottom: 8px;
 }
-h1 span {
+.title .title-subText {
   color: #ed552f;
 }
 .related-site__list {
@@ -37,16 +37,16 @@ h1 span {
   width: 166px;
   height: 29px;
   overflow: hidden;
-  padding-left: 24px;
   transition: padding-top 0.3s 0.3s, height 0.3s;
 }
 .related-site__list:hover {
   height: 169px;
   padding-top: 12px;
 }
-.related-site__list li a {
+.related-site__list a {
   text-decoration: none;
   font-size: 14px;
   display: block;
   padding: 4px;
+  padding-left: 24px;
 }
