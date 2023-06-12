@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.news-title,
+.news-more-wrapper a,
+.news-thumbnail-wrapper figcaption,
+.news-contents h3,
+.news-contents p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.news-thumbnail-wrapper figcaption,
+.news-contents h3,
+.news-contents p {
+  color: #181818;
+}
+
+.news-wrapper {
+  display: grid;
+  margin: 50px; /* 가시성을 위한 공백 처리 */
+  width: 380px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 12px;
+  grid-template-areas:
+    "title title . . . . . . . . more more"
+    "lineBox lineBox lineBox lineBox lineBox lineBox lineBox lineBox lineBox . . ."
+    "thumb thumb thumb thumb newsContents newsContents newsContents newsContents newsContents newsContents newsContents newsContents";
+}
+.news-title {
+  color: #ed552f;
+  grid-area: title;
+}
+.news-more-wrapper {
+  width: 57px;
+  grid-area: more;
+}
+.news-more-wrapper a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news-more-wrapper a img {
+  width: 16px;
+  height: 16px;
+}
+.line-box {
+  width: 266px;
+  height: 1px;
+  background: linear-gradient(90deg, #a9a9a9 -1.32%, #ffffff 100%);
+  grid-area: lineBox;
+}
+.news-thumbnail-wrapper {
+  margin-top: 12px;
+  grid-area: thumb;
+  text-align: center;
+}
+.news-thumbnail-wrapper img {
+  box-shadow: 0px 15px 15px 5px #aaaaaa;
+  display: block;
+}
+.news-thumbnail-wrapper figcaption {
+  margin-top: 16px;
+}
+.news-contents {
+  margin-top: 12px;
+  grid-area: newsContents;
+}
+.news-contents p:nth-child(2) {
+  margin-top: 4px;
+}
+.news-contents p:last-child {
+  text-align: justify;
+  margin-top: 12px;
+}
