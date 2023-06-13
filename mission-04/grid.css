@@ -11,7 +11,7 @@ body {
 }
 
 .news-title,
-.news-more-wrapper a,
+.news-more-link,
 .news-thumbnail-wrapper figcaption,
 .news-contents h3,
 .news-contents p {
@@ -33,36 +33,36 @@ body {
   gap: 12px;
   grid-template-areas:
     "title title . . . . . . . . more more"
-    "lineBox lineBox lineBox lineBox lineBox lineBox lineBox lineBox lineBox . . ."
     "thumb thumb thumb thumb newsContents newsContents newsContents newsContents newsContents newsContents newsContents newsContents";
+  position: relative;
+}
+.news-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 266px;
+  height: 1px;
+  background: linear-gradient(90deg, #a9a9a9 -1.32%, #ffffff 100%);
+  top: 33px;
 }
 .news-title {
   color: #ed552f;
   grid-area: title;
 }
-.news-more-wrapper {
+.news-more-link {
   width: 57px;
   grid-area: more;
-}
-.news-more-wrapper a {
   text-decoration: none;
   color: inherit;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.news-more-wrapper a img {
+.news-more-link img {
   width: 16px;
   height: 16px;
 }
-.line-box {
-  width: 266px;
-  height: 1px;
-  background: linear-gradient(90deg, #a9a9a9 -1.32%, #ffffff 100%);
-  grid-area: lineBox;
-}
 .news-thumbnail-wrapper {
-  margin-top: 12px;
+  margin-top: 24px;
   grid-area: thumb;
   text-align: center;
 }
@@ -74,7 +74,7 @@ body {
   margin-top: 16px;
 }
 .news-contents {
-  margin-top: 12px;
+  margin-top: 24px;
   grid-area: newsContents;
 }
 .news-contents p:nth-child(2) {

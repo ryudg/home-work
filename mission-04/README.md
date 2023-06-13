@@ -32,10 +32,7 @@ grid 실습을 위한 과제
 ```html
 <section class="news-wrapper">
   <h2 class="news-title">...</h2>
-  <div class="news-more-wrapper">
-    <a><img />...</a>
-  </div>
-  <div class="line-box" aria-label="구분선"></div>
+  <a class="news-more-link"><img />...</a>
   <figure class="news-thumbnail-wrapper">
     <img />
     <figcaption>...</figcaption>
@@ -52,10 +49,8 @@ grid 실습을 위한 과제
 
 1. 자식으로 section의 제목을 담당할 `<h2 class="news-title">`
 2. 더보기 링크를 담당할 `<div class="news-more-wrapper">`
-3. 구분선을 담당할 빈 박스인 `<div class="line-box" aria-label="구분선">`
-   - 스크린 리더 등 보조 기기를 이용하는 사용자에게 해당 영역이 "구분선"이라고 전달하기 위해 비어있는 `div`요소에 `aria-label` 속성을 사용했다.
-4. 썸네일 이미지와 이미지에 대한 설명을 담당하는 `<figure class="news-thumbnail-wrapper">`
-5. 새 소식의 텍스트 컨텐츠를 담당하는 `<div class="news-contents">`
+3. 썸네일 이미지와 이미지에 대한 설명을 담당하는 `<figure class="news-thumbnail-wrapper">`
+4. 새 소식의 텍스트 컨텐츠를 담당하는 `<div class="news-contents">`
 
 위와 같이 크게 5가지의 요소들로 구성되어 있다.
 
@@ -81,17 +76,13 @@ grid 실습을 위한 과제
   grid-template-rows: auto;
   grid-template-areas:
     "title title . . . . . . . . more more"
-    "lineBox lineBox lineBox lineBox lineBox lineBox lineBox lineBox lineBox . . ."
     "thumb thumb thumb thumb newsContents newsContents newsContents newsContents newsContents newsContents newsContents newsContents";
 }
 .news-title {
   grid-area: title;
 }
-.news-more-wrapper {
+.news-more-link {
   grid-area: more;
-}
-.line-box {
-  grid-area: lineBox;
 }
 .news-thumbnail-wrapper {
   grid-area: thumb;
@@ -102,6 +93,21 @@ grid 실습을 위한 과제
 ```
 
 #### Etc
+
+**구분선**
+
+`<section class="news-wrapper">` 요소에 가상클래스 `::after`를 이용하여 구분선을 디자인 하였다.
+
+```css
+.news-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 266px;
+  height: 1px;
+  background: linear-gradient(90deg, #a9a9a9 -1.32%, #ffffff 100%);
+  top: 33px;
+}
+```
 
 **`text-align: justify`**
 
