@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+h2,
+a {
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.favoritSite {
+  margin: 50px;
+  padding: 12px;
+  width: 190px;
+  background: linear-gradient(180deg, #cccccc 0%, #eeeeee 100%);
+  border: 1px solid #a3a3a3;
+  border-radius: 5px;
+  position: relative;
+}
+.site-title {
+  font-size: 15px;
+}
+.accent-color {
+  color: #ed552f;
+}
+.site-lists {
+  counter-reset: ranking;
+  list-style: none;
+}
+.site-item {
+  counter-increment: ranking;
+  margin-top: 8px;
+}
+.site-item::before {
+  content: counter(ranking);
+  font-size: 11px;
+  background: #a3a3a3;
+  color: #fff;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 1.5;
+  margin-right: 4px;
+}
+.site-item a {
+  font-size: 11px;
+}
+.sprite {
+  background: url(./images/rank.png) no-repeat 100% 0;
+}
+.sprite-up {
+  background-position-y: 4px;
+}
+.sprite-down {
+  background-position-y: -40px;
+}
+.sprite-no {
+  background-position-y: -18px;
+}
+.site-more {
+  font-size: 14px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: url(./images/Union.png) no-repeat 0 50%;
+  padding-left: 20px;
+}
