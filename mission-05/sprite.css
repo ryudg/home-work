@@ -10,15 +10,16 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 h2,
-a {
+.favorite__item,
+.favorite__more {
   line-height: 1.5;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
-.favoritSite {
-  margin: 50px;
+.favorite {
+  margin: 100px;
   padding: 12px;
   width: 190px;
   background: linear-gradient(180deg, #cccccc 0%, #eeeeee 100%);
@@ -26,21 +27,22 @@ a {
   border-radius: 5px;
   position: relative;
 }
-.site-title {
+.favorite__title {
   font-size: 15px;
 }
-.accent-color {
+.accentFavorite {
   color: #ed552f;
 }
-.site-lists {
+.favorite__list {
   counter-reset: ranking;
   list-style: none;
 }
-.site-item {
+.favorite__item {
   counter-increment: ranking;
   margin-top: 8px;
+  font-size: 11px;
 }
-.site-item::before {
+.favorite__item::before {
   content: counter(ranking);
   font-size: 11px;
   background: #a3a3a3;
@@ -50,25 +52,25 @@ a {
   height: 16px;
   text-align: center;
   border-radius: 5px;
-  line-height: 1.5;
   margin-right: 4px;
 }
-.site-item a {
-  font-size: 11px;
+.favorite__link {
+  display: inline-block;
+  width: calc(100% - 16px - 4px);
 }
 .sprite {
   background: url(./images/rank.png) no-repeat 100% 0;
 }
 .sprite-up {
-  background-position-y: 4px;
+  background-position-y: 3px;
 }
 .sprite-down {
-  background-position-y: -40px;
+  background-position-y: -42px;
 }
 .sprite-no {
-  background-position-y: -18px;
+  background-position-y: -19px;
 }
-.site-more {
+.favorite__more {
   font-size: 14px;
   position: absolute;
   top: 12px;
